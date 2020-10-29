@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $conn = connect_db();
 
         $code = $_COOKIE['codeGen'];
-        $verify = "SELECT * FROM `codes` WHERE code = '$code'";
+        $verify = "SELECT * FROM `$table_codes` WHERE code = '$code'";
 
         $result = mysqli_query($conn, $verify);
         if($result){
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         if($verificador == true){
             $client = mysqli_real_escape_string($conn,$_POST["client"]);
 
-            $sql = "INSERT INTO codes (code, client) VALUES 
+            $sql = "INSERT INTO `$table_codes` (code, client) VALUES 
             ('$code', '$client');";
 
             if(mysqli_query($conn, $sql)){

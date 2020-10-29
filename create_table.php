@@ -1,12 +1,8 @@
 <?php
 require_once "credentials.php";
+require_once "db_functions.php";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+$conn = connect_db();
 
 // sql to create table
 $sql1 = "CREATE TABLE users (

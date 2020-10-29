@@ -1,12 +1,8 @@
 <?php
 require_once "credentials.php";
+require_once "db_functions.php";
 
-// Create connection
-$conn = mysqli_connect($servername, $username, $password);
-// Check connection
-if (!$conn){
-    die("Connection failed: " . mysqli_connect_error());
-}
+$conn = connect_db();
 
 // Create db
 $sql = "CREATE DATABASE $dbname";

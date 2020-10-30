@@ -6,7 +6,7 @@
 - O sorteador deve , inicialmente, gerar os códigos e inserí-los na tabela do Banco de Dados;
 - Para participar do sorteio, o código deve ser válido e não pode ter sido utilizado anteriormente.
 
-Para treinar o uso de diferentes linguagens, utilizei PHP, MySQL, JavaScript, HTML e CSS para o desenvolvimento de todo o sistema.
+Para treinar o uso de diferentes linguagens, utilizei PHP, MySQL, HTML e CSS para o desenvolvimento de todo o sistema.
 
 
 ## Projeto

@@ -1,5 +1,5 @@
 # Codes Raffling
-*A small project of raffling using PHP, MySQL, JavaScript, HTML and CSS.*
+*A small project of raffling using PHP, MySQL, HTML and CSS.*
 
 ## Objetivo
 #### Desenvolvimento de um sorteador de código simples:

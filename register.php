@@ -6,9 +6,10 @@ $success = false;
 
 $code = $name = $birth = $cpf = '';
 
+$conn = connect_db();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if (isset($_POST["code"]) && isset($_POST["name"]) && isset($_POST["birth"]) && isset($_POST["cpf"])){
-        $conn = connect_db();
 
         $code = mysqli_real_escape_string($conn,$_POST["code"]);
         $name = mysqli_real_escape_string($conn,$_POST["name"]);

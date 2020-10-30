@@ -4,7 +4,6 @@ require_once "db_functions.php";
 
 $conn = connect_db();
 
-// sql to create table
 $sql1 = "CREATE TABLE users (
   id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
   code VARCHAR(30) NOT NULL,

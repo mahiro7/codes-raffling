@@ -4,7 +4,6 @@ require_once "db_functions.php";
 
 $conn = connect_db();
 
-// Create db
 $sql = "CREATE DATABASE $dbname";
 if (mysqli_query($conn, $sql)){
     echo "Database created successfully";

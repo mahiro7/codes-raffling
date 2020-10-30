@@ -24,9 +24,17 @@ Quanto aos clientes, esses terão acesso à página [register.php](register.php)
 
 ![Página de cadastro do cliente, código válido](midia/cadastro_valid.png)
 
+#
+
 Caso o código seja inválido, ou já tenha sido utilizado anteriormente, o programa também informará e não deixará o cliente participar do sorteio.
 
-![Página de cadastro do cliente, código inválido](midia/cadastro_invalid.png) ![Página de cadastro do cliente, código já utilizado](midia/cadastro_utiliz.png)
+![Página de cadastro do cliente, código inválido](midia/cadastro_invalid.png) 
+
+#
+
+![Página de cadastro do cliente, código já utilizado](midia/cadastro_utiliz.png)
+
+#
 
 Por fim, o dono da loja terá a tabela com os clientes inscritos no sorteio.
 
@@ -36,9 +44,9 @@ Por fim, o dono da loja terá a tabela com os clientes inscritos no sorteio.
 
 ## Próximos passos
 
-[ ] Fazer página de sorteio, ou integrar o sorteio à página já existente [codecreate.php](codecreate.php);
-[ ] Verificador de CPF com JavaScript;
-[ ] Aprimorar design com CSS;
-[ ] Aplicar sistema de autenticação para diferenciar Cliente de Administrador;
-[ ] \(Obrigue-me, rs) Traduzir o README.md para inglês LOL;
-[ ] \(Sidequest) Descobrir mais coisas para aprimorar.
+- [ ] Fazer página de sorteio, ou integrar o sorteio à página já existente [codecreate.php](codecreate.php);
+- [ ] Verificador de CPF com JavaScript;
+- [ ] Aprimorar design com CSS;
+- [ ] Aplicar sistema de autenticação para diferenciar Cliente de Administrador;
+- [ ] \(Obrigue-me, rs) Traduzir o README.md para inglês LOL;
+- [ ] \(Sidequest) Descobrir mais coisas para aprimorar.

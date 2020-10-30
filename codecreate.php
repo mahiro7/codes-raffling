@@ -1,18 +1,3 @@
-<script>
-function codeGen(len){
-    let code = ''
-
-    do{
-        code += Math.random().toString(36).substring(2);
-    }while(code.length =! len)
-
-    return code.toUpperCase()
-}
-const si = 10
-
-document.cookie=`codeGen=${codeGen(si)}`
-</script>
-
 <?php 
 require "db_functions.php";
 
@@ -20,13 +5,26 @@ $error = false;
 $success = false;
 $client = "";
 
+$lenght = 10;
+
+$conn = connect_db();
+
+function code($lenght){
+    $code = '';
+    $chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+
+    for ($i = 0; $i < $lenght; $i++) {
+        $code .= $chars[mt_rand(0, strlen($chars) - 1)];
+    }
+    return $code;
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
     if (isset($_POST["client"])){
 
         $verificador = false;
-        $conn = connect_db();
 
-        $code = $_COOKIE['codeGen'];
+        $code = code($lenght);
         $verify = "SELECT * FROM `$table_codes` WHERE code = '$code'";
 
         $result = mysqli_query($conn, $verify);
